@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <style>
+            @page {
+                size: A4; /* Change from the default size of A4 */
+                margin: 0mm; /* Set margin on each page */
+            }
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: white;
+                font-size: 10pt;
+                width: 210mm;
+                height: 297mm;
+                display: flex;
+                align-items: center; /* Vertically center */
+                justify-content: center; /* Horizontally center */
+            }
+            .card {
+                position: relative; /* Enable positioning for child elements */
+                background-color: white;
+                width: 65mm;
+                height: 65mm;
+                overflow: hidden; /* Prevent overflow */
+            }
+            table {
+                width: 195mm;
+                table-layout: fixed;
+                margin-left: auto; 
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+            td {
+                width: 65mm;
+                height: 65mm;
+            }
+            .qr-code {
+                position: absolute; /* Position QR code absolutely within card */
+                top: 50%; /* Center vertically */
+                left: 50%; /* Center horizontally */
+                transform: translate(-50%, -50%); /* Adjust for its own size */
+                width: 40%; /* Adjust width as needed */
+                height: auto; /* Maintain aspect ratio */
+                height: auto; /* Maintain aspect ratio */
+                z-index: 2; /* Above the snowflake */
+                opacity: 1; /* Fully visible */
+            }
+            .snowflake {
+                width: 100%;
+                height: 100%;
+                z-index: 1; /* Below the QR code */
+                position: absolute; /* Position snowflake absolutely within card */
+            }
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <div class="card">
+                        <img class="qr-code" src="{QR-CODE-PATH_2}" >
+                        <img src="{BAKCGROUND-PATH}" class="snowflake">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img class="qr-code" src="{QR-CODE-PATH_1}">
+                        <img src="{BAKCGROUND-PATH}" class="snowflake">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img class="qr-code" src="{QR-CODE-PATH_0}">
+                        <img src="{BAKCGROUND-PATH}" class="snowflake">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card">
+                        <img class="qr-code" src="{QR-CODE-PATH_5}">
+                        <img src="{BAKCGROUND-PATH}" class="snowflake">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img class="qr-code" src="{QR-CODE-PATH_4}">
+                        <img src="{BAKCGROUND-PATH}" class="snowflake">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img class="qr-code" src="{QR-CODE-PATH_3}">
+                        <img src="{BAKCGROUND-PATH}" class="snowflake">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card">
+                        <img class="qr-code" src="{QR-CODE-PATH_8}">
+                        <img src="{BAKCGROUND-PATH}" class="snowflake">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img class="qr-code" src="{QR-CODE-PATH_7}">
+                        <img src="{BAKCGROUND-PATH}" class="snowflake">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img class="qr-code" src="{QR-CODE-PATH_6}">
+                        <img src="{BAKCGROUND-PATH}" class="snowflake">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="card">
+                        <img class="qr-code" src="{QR-CODE-PATH_10}">
+                        <img src="{BAKCGROUND-PATH}" class="snowflake">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img class="qr-code" src="{QR-CODE-PATH_10}">
+                        <img src="{BAKCGROUND-PATH}" class="snowflake">
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img class="qr-code" src="{QR-CODE-PATH_9}">
+                        <img src="{BAKCGROUND-PATH}" class="snowflake">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </body>
+    </html>

@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <style>
+        @page {
+        size: A4; /* Change from the default size of A4 */
+        margin: 0mm; /* Set margin on each page */
+      }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-size: 10pt;
+            width: 210mm;
+            height: 297mm;
+            display: flex;
+            align-items: center; /* Vertically center */
+            justify-content: center; /* Horizontally center */
+        }
+
+        .card {
+            background-color: white;
+            width: 65mm;
+            height: 65mm;
+            position: relative;
+            text-align: center;
+        }
+
+        .info {
+            position: absolute;
+            left: 50%;
+            bottom: 10pt;
+            transform: translateX(-50%);
+            padding: 3pt;
+            border: 2pt solid #333;
+            width: 80%;
+            background-color: #f9f9f9;
+            border-radius: 15pt;
+            box-shadow: 0 4pt 10pt rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 10pt;
+        }
+        
+        table {
+            width: 195mm;
+            table-layout: fixed;
+            margin-left: auto; 
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        td {
+            width: 65mm;
+            height: 65mm;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <div class="card" style="position: relative;">
+                    <img src="{ALBUM_COVER_0}" style="width: 100%">
+                    <div class="info">
+                        <b style="color: #444;">{SONG_NAME_0}<br>
+                            <span style="color: #999;">{RELEASE_DATE_0}</span></b><br>
+                        <span style="color: #777; font-size: 8pt;">{ARTISTS_0}</span><br>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card" style="position: relative;">
+                    <img src="{ALBUM_COVER_1}" style="width: 100%">
+                    <div class="info">
+                        <b style="color: #444;">{SONG_NAME_1}<br>
+                            <span style="color: #999;">{RELEASE_DATE_1}</span></b><br>
+                        <span style="color: #777; font-size: 8pt;">{ARTISTS_1}</span><br>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card" style="position: relative;">
+                    <img src="{ALBUM_COVER_2}" style="width: 100%">
+                    <div class="info">
+                        <b style="color: #444;">{SONG_NAME_2}<br>
+                            <span style="color: #999;">{RELEASE_DATE_2}</span></b><br>
+                        <span style="color: #777; font-size: 8pt;">{ARTISTS_2}</span><br>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="card" style="position: relative;">
+                    <img src="{ALBUM_COVER_3}" style="width: 100%">
+                    <div class="info">
+                        <b style="color: #444;">{SONG_NAME_3}<br>
+                            <span style="color: #999;">{RELEASE_DATE_3}</span></b><br>
+                        <span style="color: #777; font-size: 8pt;">{ARTISTS_3}</span><br>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card" style="position: relative;">
+                    <img src="{ALBUM_COVER_4}" style="width: 100%">
+                    <div class="info">
+                        <b style="color: #444;">{SONG_NAME_4}<br>
+                            <span style="color: #999;">{RELEASE_DATE_4}</span></b><br>
+                        <span style="color: #777; font-size: 8pt;">{ARTISTS_4}</span><br>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card" style="position: relative;">
+                    <img src="{ALBUM_COVER_5}" style="width: 100%">
+                    <div class="info">
+                        <b style="color: #444;">{SONG_NAME_5}<br>
+                            <span style="color: #999;">{RELEASE_DATE_5}</span></b><br>
+                        <span style="color: #777; font-size: 8pt;">{ARTISTS_5}</span><br>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="card" style="position: relative;">
+                    <img src="{ALBUM_COVER_6}" style="width: 100%">
+                    <div class="info">
+                        <b style="color: #444;">{SONG_NAME_6}<br>
+                            <span style="color: #999;">{RELEASE_DATE_6}</span></b><br>
+                        <span style="color: #777; font-size: 8pt;">{ARTISTS_6}</span><br>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card" style="position: relative;">
+                    <img src="{ALBUM_COVER_7}" style="width: 100%">
+                    <div class="info">
+                        <b style="color: #444;">{SONG_NAME_7}<br>
+                            <span style="color: #999;">{RELEASE_DATE_7}</span></b><br>
+                        <span style="color: #777; font-size: 8pt;">{ARTISTS_7}</span><br>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card" style="position: relative;">
+                    <img src="{ALBUM_COVER_8}" style="width: 100%">
+                    <div class="info">
+                        <b style="color: #444;">{SONG_NAME_8}<br>
+                            <span style="color: #999;">{RELEASE_DATE_8}</span></b><br>
+                        <span style="color: #777; font-size: 8pt;">{ARTISTS_8}</span><br>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="card" style="position: relative;">
+                    <img src="{ALBUM_COVER_9}" style="width: 100%">
+                    <div class="info">
+                        <b style="color: #444;">{SONG_NAME_9}<br>
+                            <span style="color: #999;">{RELEASE_DATE_9}</span></b><br>
+                        <span style="color: #777; font-size: 8pt;">{ARTISTS_9}</span><br>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card" style="position: relative;">
+                    <img src="{ALBUM_COVER_10}" style="width: 100%">
+                    <div class="info">
+                        <b style="color: #444;">{SONG_NAME_10}<br>
+                            <span style="color: #999;">{RELEASE_DATE_10}</span></b><br>
+                        <span style="color: #777; font-size: 8pt;">{ARTISTS_10}</span><br>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="card" style="position: relative;">
+                    <img src="{ALBUM_COVER_11}" style="width: 100%">
+                    <div class="info">
+                        <b style="color: #444;">{SONG_NAME_11}<br>
+                            <span style="color: #999;">{RELEASE_DATE_11}</span></b><br>
+                        <span style="color: #777; font-size: 8pt;">{ARTISTS_11}</span><br>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
